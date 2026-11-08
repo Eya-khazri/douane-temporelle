@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <!-- azra9 mta3 el passeport -->
+    <color name="bleu_passeport">#1B2A4A</color>
+    <!-- dheheb -->
+    <color name="or_passeport">#D4AF37</color>
+    <!-- crème lel formulaire -->
+    <color name="creme">#FFF8E7</color>
+    <!-- a5dhar: approuvé -->
+    <color name="vert_approuve">#2E7D32</color>
+    <!-- a7mer: refusé -->
+    <color name="rouge_refuse">#C62828</color>
+    <!-- a7mer fet7 lel alerte -->
+    <color name="rouge_alerte">#FF8A80</color>
+    <!-- abyedh -->
+    <color name="blanc">#FFFFFF</color>
+</resources>
