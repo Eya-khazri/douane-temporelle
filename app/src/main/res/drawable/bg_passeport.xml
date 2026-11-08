@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- fond el passeport: azra9, zwaya mdawra, 7ajjes dheheb -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="@color/bleu_passeport" />
+    <corners android:radius="20dp" />
+    <stroke
+        android:width="3dp"
+        android:color="@color/or_passeport" />
+</shape>

@@ -5,6 +5,7 @@ import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 
 // hedhi el Activity 2 (el passeport) - Ines bech tkammelha
+// Ines : bdit lkhedma
 public class VerificationActivity extends AppCompatActivity {
 
     @Override
