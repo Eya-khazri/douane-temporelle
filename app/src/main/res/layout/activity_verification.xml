@@ -1,10 +1,115 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<!-- RACINE: LinearLayout HORIZONTAL (contrainte) - el fond howa el passeport -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    android:background="@drawable/bg_passeport"
+    android:orientation="horizontal"
+    android:padding="12dp"
     tools:context=".VerificationActivity">
+    <!-- 3al isar: el taswira, 30% (width=0dp + weight=0.3) -->
+    <ImageView
+        android:id="@+id/iv_photo_ea"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.3"
+        android:adjustViewBounds="true"
+        android:background="@drawable/bg_photo"
+        android:contentDescription="@string/desc_photo"
+        android:padding="8dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_voyageur" />
+    <!-- 3al imin: RelativeLayout, 70% (width=0dp + weight=0.7) -->
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.7"
+        android:paddingStart="16dp"
+        android:paddingEnd="4dp">
+        <!-- el titre, lasa9 el fou9 -->
+        <TextView
+            android:id="@+id/tv_passeport_titre_ea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:letterSpacing="0.1"
+            android:text="@string/titre_passeport"
+            android:textColor="@color/or_passeport"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <!-- el esm, ta7t el titre -->
+        <TextView
+            android:id="@+id/tv_passeport_nom_ea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_passeport_titre_ea"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/blanc"
+            android:textSize="16sp"
+            tools:text="Nom : Ahmed" />
+        <!-- el 3omr el temporel, ta7t el esm -->
+        <TextView
+            android:id="@+id/tv_passeport_age_ea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_passeport_nom_ea"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/blanc"
+            android:textSize="16sp"
+            tools:text="Âge temporel : 60 ans" />
+        <!-- el trajet, ta7t el 3omr -->
+        <TextView
+            android:id="@+id/tv_passeport_annees_ea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_passeport_age_ea"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/blanc"
+            android:textSize="16sp"
+            tools:text="Trajet : 1990 → 2050" />
+        <!-- el motif, ta7t el trajet -->
+        <TextView
+            android:id="@+id/tv_passeport_motif_ea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_passeport_annees_ea"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/blanc"
+            android:textSize="16sp"
+            tools:text="Motif : Tourisme" />
+        <!-- alerte: mo5abbiya (gone), todh-hor ken fama paradoxe -->
+        <TextView
+            android:id="@+id/tv_passeport_alerte_ea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_passeport_motif_ea"
+            android:layout_marginTop="12dp"
+            android:text="@string/passeport_alerte"
+            android:textColor="@color/rouge_alerte"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+        <!-- bouton refuser, lasa9 el louta -->
+        <Button
+            android:id="@+id/btn_refuser_ea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="@string/btn_refuser"
+            android:textColor="@color/blanc"
+            app:backgroundTint="@color/rouge_refuse" />
+        <!-- bouton approuver, fou9 bouton refuser -->
+        <Button
+            android:id="@+id/btn_approuver_ea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/btn_refuser_ea"
+            android:text="@string/btn_approuver"
+            android:textColor="@color/blanc"
+            app:backgroundTint="@color/vert_approuve" />
+    </RelativeLayout>
+</LinearLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
