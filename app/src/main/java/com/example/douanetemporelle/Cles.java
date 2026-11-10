@@ -7,10 +7,10 @@ package com.example.douanetemporelle;
  */
 public final class Cles {
 
-    // e5er 4 ar9am mel carte etudiant (baddel 1234 bel ra9m el s7i7)
+    // e5er 4 ar9am mel carte etudiant (baddelna 1234 bel ra9m el s7i7)
     public static final String MATRICULE = "3002";
 
-    // el jez2 elli yji ba3d el matricule fel cle
+    // el partie elli tji ba3d el matricule fel cle
     public static final String NOM_VOYAGEUR = "NOM_VOYAGEUR";
     public static final String ANNEE_NAISSANCE = "ANNEE_NAISSANCE";
     public static final String ANNEE_DESTINATION = "ANNEE_DESTINATION";
@@ -20,7 +20,7 @@ public final class Cles {
     // 7atta 7ad ma ya3mel "new Cles()"
     private Cles() { }
 
-    // methode statique tebni el cle: "1234" + "_" + "NOM_VOYAGEUR" = "1234_NOM_VOYAGEUR"
+    // methode statique tebni el cle: "3002" + "_" + "NOM_VOYAGEUR" = "3002_NOM_VOYAGEUR"
     public static String construireCle(String matricule, String suffixe) {
         return matricule + "_" + suffixe;
     }
