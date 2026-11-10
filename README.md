@@ -2,11 +2,11 @@
 
 ## Membres
 - Eya Khazri : setup, Activité 1 (formulaire), classe Cles
-- Ines Yaacoubi : Activité 2 (passeport, nombre premier)
+- Ines Yaakoubi : Activité 2 (passeport, nombre premier)
 - Baya Meddeb : Activité 3 (verdict), navigation, tests
 
 ## Infos
-- Matricule utilisé pour les clés : 1234
+- Matricule utilisé pour les clés : 3002
 - Initiales utilisées dans les IDs : _ea
 
 ## Captures d'écran
