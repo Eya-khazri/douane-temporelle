@@ -22,7 +22,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <!-- Activity 2: el passeport -->
+        <!-- Activity 2 : el passeport -->
         <activity
             android:name=".VerificationActivity"
             android:exported="false"
