@@ -11,6 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.DouaneTemporelle">
+        <!-- Activity 1: awl haja ychoufha l utilisateur ki yhell (LAUNCHER) -->
         <activity
             android:name=".MainActivity"
             android:exported="true"
@@ -21,10 +22,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <!-- Activity 2: el passeport -->
         <activity
             android:name=".VerificationActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
+        <!-- Activity 3: el verdict -->
         <activity
             android:name=".ResultActivity"
             android:exported="false"
